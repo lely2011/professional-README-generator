@@ -2,8 +2,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateREADME = ({ name, description, tableContents, installation, usage, credits, license }) =>
-`# ${name}
+const generateREADME = ({ title, description, tableContents, installation, usage, credits, license }) =>
+`# ${title}
 
 ## ${description}
 
@@ -49,7 +49,7 @@ inquirer
   .prompt([
     {
       type: 'input',
-      name: 'name',
+      name: 'title',
       message: 'What is your project name?',
     },
     {
@@ -88,10 +88,10 @@ inquirer
 const questions = [];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// FileSystem.writeToFile('README.generate', generateREADME)
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
-init();
+// init();

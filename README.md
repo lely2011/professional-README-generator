@@ -15,18 +15,15 @@ Link: https://github.com/coding-boot-camp/potential-enigma
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+When generating node to run the questions, it should display all questions to help generate a good README file. Here is an example of questions to expect:
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![question sample](images/node-questions-demo.png)
 
 ## Credits
 
-Starter Code from: https://github.com/coding-boot-camp/potential-enigma 
-README guide sample and explaination: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+- Starter Code from: https://github.com/coding-boot-camp/potential-enigma 
+
+- README guide, sample, and explanation: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
 ## License
 
