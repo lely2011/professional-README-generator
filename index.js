@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./generateMarkdown');
+const generateMarkdown = require('./generateMarkdown.js');
 
 
 
@@ -56,7 +56,7 @@ async function promptUser(){
           message: "Enter your email:"
         },
     ]);
-    fs.writeFile('ReadMe.generate ', generateMarkdown(responses))
+    fs.writeFile('(generate)ReadMe.md)', generateMarkdown(responses))
 }
 
 // TODO: Create a function to write README file
