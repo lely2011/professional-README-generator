@@ -1,33 +1,35 @@
 function generateMarkdown(data) {
     return `
 
-# ${title}
+    # ${data.title}
 
-## Description
-${data.description}
+    ## Description
+    ${data.description}
 
-## Installation
-${data.installation}
-
-
-## Usage
-${data.usage}
+    ## Installation
+    ${data.installation}
 
 
-## Credits
-${credits}
+    ## Usage
+    ${data.usage}
 
-## Contact Information
-Email me at: ${data.email}
-GitHub: [${data.username}](https://github.com/${data.username})
-`
-function (license) {
+
+    ## Credits
+    ${data.credits}
+
+    ## Contact Information
+    Email me at: ${data.email}
+    GitHub: [${data.username}](https://github.com/${data.username})
+    `;
+}
+
+function generateLicense(license) {
     if (license !== "None") {
         return `## License
         This application is covered by the ${license} license.`
     }
     return ``;
 }
-}
+
 
 module.exports = generateMarkdown;
