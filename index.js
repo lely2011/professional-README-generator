@@ -56,7 +56,8 @@ async function promptUser(){
           message: "Enter your email:"
         },
     ]);
-    fs.writeFile('(generate)ReadMe.md)', generateMarkdown(responses))
+    fs.writeFile('(generate)ReadMe.md)', generateMarkdown(responses), (err) =>
+        err ? console.error(err) : console.log("Your Professional ReadMe is gnerated"))
 }
 
 // TODO: Create a function to write README file
